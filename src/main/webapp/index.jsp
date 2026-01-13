@@ -77,6 +77,12 @@
                     </tbody>
                 </table>
             </div>
+            <strong>Recent Searches: </strong>
+            <c:forEach var="prevSearch" items="${history}">
+                <a href="countries?name=${prevSearch}"class="badge bg-secondary text-decoration-none me-1">
+                    ${prevSearch}
+                </a>
+            </c:forEach>
         </div>
     </body>
 </html>
